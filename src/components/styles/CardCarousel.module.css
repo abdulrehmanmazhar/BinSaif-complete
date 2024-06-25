@@ -1,0 +1,44 @@
+
+.container{
+    padding: 0 1rem;
+    margin: auto;
+    display: flex;
+    /* width: 150vw; */
+    justify-content: space-around;
+    
+    
+}
+.frame{
+    overflow: hidden;
+    padding: 2rem;
+    position: relative;
+}
+.controls{
+    padding: 0 .5rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+}
+.prev, .next{
+    width: 3rem;
+    height: 3rem;
+    padding: .75rem;
+    cursor: pointer;
+     background-color: white;
+     border: 1px solid gainsboro;
+    border-radius: 50%;
+}
+.prev:hover, .next:hover{
+    background-color: gainsboro;
+
+}
+.silent{
+    color: white;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}

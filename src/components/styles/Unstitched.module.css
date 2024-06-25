@@ -1,0 +1,80 @@
+.unstitched{
+
+    font-family: "Poppins";
+    display: flex;
+    justify-content: space-around;
+    padding: 7rem 1rem 1rem 1rem;
+    user-select: none;
+}
+a{
+    text-decoration: none;
+    color: white;   
+}
+img{
+    width: 40%;
+    border-radius: .5rem;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    text-align: center;
+}
+.filter{
+    display: flex;
+    justify-content: center;
+}
+.filter button{
+    margin: 0 1rem;
+    padding: 1rem;
+    font-size: 1.25rem;
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+}
+.filter button:hover{
+    color: #fd004c;
+}
+.gray{
+    color: gray;
+}
+.explore button{
+    font-family: 'Poppins';
+    font-size: 1rem;
+    background-color: black;
+    color: white;
+    padding: .8rem;
+    border-radius: 2rem;
+    outline: none;
+    border: 1px solid black;
+    cursor: pointer;
+    padding-left: 1.5em;
+    padding-right: 1.5rem;
+
+}
+.explore button:hover, a:hover{
+    background-color: white;
+    color: black;
+    transition: all .3s ease-in-out;
+    
+}
+.children{
+    /* margin-top: -68px; */
+    padding-bottom: 0rem;
+}
+.explore{
+    margin-top: 1rem;
+}
+@media screen and (max-width:850px) {
+    .unstitched{
+        flex-direction: column;
+        gap: 1rem;
+
+    }
+    .unstitched img{
+        display: none;
+    }
+}

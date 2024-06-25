@@ -1,0 +1,137 @@
+.nav{
+    font-family: "Poppins";
+    font-size: 1rem;
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    width: 100%;
+    gap: 2rem;
+    user-select: none;
+    z-index: 999999;
+    border-bottom: 1px solid darkgray;
+
+}
+.logo{
+    display: flex;
+    flex-grow: 0;
+    cursor: pointer;
+}
+.nav a {
+    text-decoration: none;
+    color: black;
+    margin-left: 2rem;
+}
+
+.aLinks> a:nth-child(4){
+    color: #fd004c;
+
+}
+.searchBar{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: .5rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    justify-content: space-between;
+    background-color: white;
+    
+}
+.searchBar input{
+    outline: none;
+    border: 0;
+    width: 100%;
+
+}
+.before{
+    padding: 3px;
+    font-size: .9rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    background: conic-gradient(
+        #fd004c,
+        #fe9000,
+        #fff820,
+        #3edf4b,
+        #3363ff,
+        #b102b7,
+        #fd084c
+    );
+
+}
+
+.icon{
+    background: white;
+    color: black;
+    padding: .5rem;
+    font-size: .9rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+}
+.icon a{
+    margin-left: 0;
+}
+.icon a:hover{
+    color: white;
+}
+.icon:hover{
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.searchIcon{
+    margin-left: 5px;
+}
+.hamburger{
+    display: none;
+}
+.hamIcon:hover{
+    color: gray;
+}
+@media screen and (max-width: 900px) {
+    
+    .aLinks{
+        display: none;
+    }
+    .searchBar{
+        flex-grow: 2;
+        max-width: 40vw;
+    }
+    .hamburger{
+        display: inline;
+        position: absolute;
+        left: 1rem;
+        cursor: pointer;
+    }
+  }
+  @media screen and (max-width: 600px) {
+   
+    .before{
+        display: none;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    
+
+    .nav{
+        justify-content: center;
+
+    }
+  }
+  @media  screen and (min-width: 400px) {
+    .searchBar{
+        display: none;
+    }
+  }
+  .searchBar{
+    width: 80%;
+    position: absolute;
+    top: 10rem;
+    right: 50%;
+    transform: translateX(50%);
+  }

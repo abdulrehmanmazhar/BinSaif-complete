@@ -1,0 +1,39 @@
+.suggestions{
+    background-color: black;
+    color: white;
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+    text-align: center;
+}
+.inputDiv{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    /* padding: .5rem; */
+    border-radius: 3rem;
+    overflow: hidden;
+    background-color: white;
+}
+.inputDiv input{
+    width: 100%;
+    outline: none;
+    padding: 1rem;
+    border: 0;
+}
+.inputDiv button{
+    width: 5rem;
+    outline: none;
+    border: 0;
+    margin: .25rem;
+    border-radius: 3rem;
+    cursor: pointer;
+    font-family: 'Poppins';
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    padding: 0 0.25rem;
+}
